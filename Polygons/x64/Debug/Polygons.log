@@ -1,0 +1,9 @@
+﻿  Config.cpp
+  convex_hull.cpp
+  convex_hull.h
+  Game.cpp
+  main.cpp
+  Utility.cpp
+  Generating Code...
+x64\Debug\convex_hull.obj : warning LNK4042: object specified more than once; extras ignored
+  Polygons.vcxproj -> D:\dev\c++\repos\Polygons\x64\Debug\Polygons.exe
