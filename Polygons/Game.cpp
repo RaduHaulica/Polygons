@@ -13,7 +13,7 @@ void Game::initialize()
     }
 	window = new sf::RenderWindow(sf::VideoMode(1000, 1000), "Polygons!");
 
-    defaultFont.loadFromFile("Roboto-Bold.ttf");
+    defaultFont.loadFromFile("./assets/Roboto-Bold.ttf");
     mainTextBlob.setFont(defaultFont);
     mainTextBlob.setFillColor(sf::Color::White);
     mainTextBlob.setCharacterSize(18);

@@ -157,6 +157,12 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Utility.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\polygon collision detection.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\Roboto-Bold.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
