@@ -13,6 +13,13 @@ void Game::initialize()
     }
 	window = new sf::RenderWindow(sf::VideoMode(1000, 1000), "Polygons!");
 
+    defaultFont.loadFromFile("Roboto-Bold.ttf");
+    mainTextBlob.setFont(defaultFont);
+    mainTextBlob.setFillColor(sf::Color::White);
+    mainTextBlob.setCharacterSize(18);
+    mainTextBlob.setString("Green border = point set convex hull\nRed border = polygons in collision\nBlue border = Minkowski difference support polygons\n\nControls:\nHold P, click and drag to place points. Release LMB to finish creating a point set.\nClick inside a polygon and drag it around.");
+    mainTextBlob.setPosition(10.f, 10.f);
+
     currentPoints.clear();
     polygons.clear();
 
@@ -83,6 +90,9 @@ void Game::draw()
         diffVA.setPrimitiveType(sf::PrimitiveType::LineStrip);
         window->draw(diffVA);
     }
+
+    // text
+    window->draw(mainTextBlob);
 
     window->display();
 }

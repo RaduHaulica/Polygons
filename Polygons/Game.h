@@ -21,6 +21,10 @@ public:
     sf::Vector2f lastMousePosition;
     sf::Vector2f mousePosition;
 
+    // text
+    sf::Font defaultFont;
+    sf::Text mainTextBlob;
+
     // misc game flags
     bool isLeftMouseButtonPressed{ false };
     bool isQuitGameRequested{ false };
